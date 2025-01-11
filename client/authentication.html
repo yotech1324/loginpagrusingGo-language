@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login & Register</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="container">
+        <h2 id="formTitle">Register</h2>
+        
+        <div id="registerForm" class="form">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <input type="password" id="password" placeholder="Password" required>
+            <button id="registerButton">Register</button>
+            <p>Already have an account? <a href="#" id="showLogin">Login here</a></p>
+        </div>
+
+        <div id="loginForm" class="form" style="display: none;">
+            <input type="email" id="loginEmail" placeholder="Email" required>
+            <input type="password" id="loginPassword" placeholder="Password" required>
+            <button id="loginButton">Login</button>
+            <p>Don't have an account? <a href="#" id="showRegister">Register here</a></p>
+        </div>
+    </div>
+
+</body>
+<script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+<script src="./auth.js"></script>
+</html>
